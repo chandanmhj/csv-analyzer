@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pandas
+numpy
+pyarrow
+plotly
+groq
+langgraph
+python-dotenv

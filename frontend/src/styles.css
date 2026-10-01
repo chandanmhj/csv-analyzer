@@ -1,0 +1,47 @@
+/* Tokens from the Repo Reader page: near-black, cream, serif display, grotesk body, wide-tracked mono labels */
+:root{--bg:#050505;--paper:#f2eadf;--cream:#f3ece0;--ink:#16140f;--muted:#8a8a8a;--line:#222;--accent:#00e5ff;--warn:#c8553d;
+--serif:"Playfair Display",Georgia,serif;--sans:"Space Grotesk",system-ui,sans-serif;--mono:"Space Mono",ui-monospace,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--cream);font-family:var(--sans);line-height:1.6;font-size:1.05rem}
+a{color:inherit}.scene{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.ring{position:fixed;left:0;top:0;width:40px;height:40px;border:1px solid var(--accent);border-radius:50%;display:grid;place-items:center;pointer-events:none;z-index:60;opacity:.8}
+.ring i{width:6px;height:6px;border-radius:50%;background:var(--accent)}@media(hover:none){.ring{display:none}}
+.top{position:sticky;top:0;z-index:30;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:20px clamp(20px,5vw,96px);background:rgba(5,5,5,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .btn{justify-self:end}.brand{font-weight:600;font-size:1.7rem;letter-spacing:-.01em}
+.navlink,.eyebrow,.label,.meta,.stats,.copy,th,.tag,.hint,.note{font-family:var(--mono);text-transform:uppercase;letter-spacing:.2em;font-size:.78rem}
+.navlink{color:var(--muted);text-decoration:none}.navlink:hover{color:var(--accent)}
+main{max-width:1500px;margin:0 auto;padding:0 20px}
+.hero{padding:88px 12px 72px}.eyebrow{color:var(--muted);margin:0 0 14px}
+h1{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(3rem,10vw,9rem);line-height:1;letter-spacing:-.01em}
+.lede{font-size:1.5rem;max-width:34em;margin:28px 0 48px;color:var(--cream)}
+.row{display:flex;gap:16px;flex-wrap:wrap}.pick{flex:1;min-width:260px;border:1px solid var(--cream);background:#0a0a0a;padding:26px 22px;color:var(--muted);font-size:1.3rem;cursor:pointer;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.pick:hover,.pick:focus-within{border-color:var(--accent)}
+.btn,button{font-family:var(--mono);font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;border:1px solid var(--cream);background:transparent;color:var(--cream);padding:14px 24px;border-radius:0;text-decoration:none;display:inline-block;transition:background .15s,color .15s,border-color .15s}
+.btn:hover,button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.solid{background:var(--cream);color:#050505;padding:0 34px;min-height:78px}.solid:hover:not(:disabled){background:var(--accent);color:#050505}
+button:disabled{opacity:.6;cursor:default}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hint,.note{color:var(--muted);text-transform:none;letter-spacing:.04em;margin:10px 0}.err{color:#ff7a90}
+.linker{padding:24px 12px 40px}.flow{height:380px;border:1px solid var(--line);background:#0a0a0a;overflow:hidden}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:10px 0}
+.tbl{background:#0a0a0a;border:1px solid var(--cream);min-width:190px;font-size:13px;font-family:var(--mono);color:var(--cream)}
+.tbl-h{padding:8px 12px;font-weight:700;border-bottom:1px solid var(--accent);color:var(--accent)}.tbl-r{position:relative;padding:5px 16px;border-top:1px solid var(--line)}
+.react-flow__edge-path{stroke:var(--accent)!important;stroke-width:2}.react-flow__edge-text{fill:var(--cream)}.react-flow__edge-textbg{fill:var(--bg)}
+.react-flow__handle{background:var(--accent);border:0;width:8px;height:8px}.react-flow__controls-button{background:#0a0a0a;border-color:var(--line);fill:var(--cream)}
+/* results: the cream panel, same as Repo Reader's result page */
+.paper{background:var(--paper);color:var(--ink);padding:56px clamp(20px,4.5vw,65px) 64px;margin:8px 0 0}
+.paper .btn,.paper button{border-color:var(--ink);color:var(--ink)}.paper button:hover:not(:disabled){background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.paper button.link,.paper button.pen{border:0;background:none;padding:4px 8px 4px 0;font-size:.75rem}.paper button.link:hover:not(:disabled){background:none;color:var(--warn)}
+.paper a{color:var(--ink)}.meta{display:flex;justify-content:space-between;color:#555;padding-bottom:16px;border-bottom:1px solid rgba(0,0,0,.22);margin-bottom:28px}
+.title{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,5.4vw,4.4rem);line-height:1.05;margin:56px 0 14px;text-transform:uppercase;word-break:break-word}
+.label{color:#444;margin:34px 0 10px;font-weight:400}.stats{color:#555;letter-spacing:.14em;margin:0 0 6px}.paper .hint,.paper .note{color:#6a6458}
+.narr{white-space:pre-wrap;max-width:80ch;font-size:1.15rem}.mono{font-family:var(--mono);font-size:.85rem}
+table{border-collapse:collapse;width:100%;margin:10px 0}th,td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(0,0,0,.15)}th{color:#6a6458;font-weight:400}
+.pen{display:inline-flex;align-items:center;margin-left:8px;vertical-align:middle;color:#6a6458!important}.pen:hover{color:var(--ink)!important}
+.tag{display:inline-block;border:1px solid var(--ink);padding:1px 8px;margin-left:8px;font-size:.62rem;letter-spacing:.14em}
+select,input{font-family:var(--sans);font-size:1rem;padding:7px 10px;background:#fbfaf6;color:var(--ink);border:1px solid var(--ink);border-radius:0}
+.crumb{margin:12px 0 0;font-family:var(--mono);font-size:.85rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:18px;margin-top:12px}
+figure{margin:0;border:1px solid rgba(0,0,0,.18);background:#fbfaf6;padding:8px 10px 10px;overflow:hidden}
+footer{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:96px;padding:14px clamp(20px,5vw,96px);border-top:1px solid var(--line)}
+footer .btn{padding:10px 16px;font-size:.72rem}.copy{color:var(--muted);letter-spacing:.18em}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.top{grid-template-columns:1fr auto}.navlink{display:none}.hero{padding-top:48px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
